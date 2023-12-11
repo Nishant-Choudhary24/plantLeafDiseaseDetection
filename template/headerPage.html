@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+     <title>Plant Leaf Disease Detection</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+     <link rel="stylesheet" href="{%static 'css/sty.css'  %}">
+     <!-- MAIN CSS -->
+     <style>
+          body {
+              margin: 0;
+              padding: 0;
+              background: url("{% static 'images/leaf.png' %}") center center no-repeat fixed;
+              background-size: cover;
+          }
+  
+          .container_head {
+              text-align: center;
+              padding-top: 40px;
+              font-family: 'Muli-Regular';
+              font-size: 50px;
+              font-weight: 100;
+              color: #fff; /* Set text color to be visible against the background */
+          }
+  
+          
+      </style>
+
+</head>
+<body id="top" style="position: relative; width: 100%; align-items: center;" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+     <!-- <img  style="position: absolute; max-width: 100%; height:auto; display: flex; background-size: cover; margin: auto; z-index: -1;" src="{%static 'images/leaf.png' %}"  alt=".."> -->
+     <div class="container_head">
+     <!-- MENU -->
+          <h1 class="heading" style=" font-family: Muli-Regular ; color: black; font-size: 50px; font-weight: 100;">Plant Leaf Disease Detection</h1>
+</div>
+
+
+     <!-- HOME -->
+
+
+<div class="container">
+     {% block content%}
+     {% endblock %}
+    
+</div>
+
+     
+
+</body>
+</html>

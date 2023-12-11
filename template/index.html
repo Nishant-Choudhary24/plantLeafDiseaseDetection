@@ -1,0 +1,37 @@
+{% extends 'headerPage.html' %}
+{% block content%}
+
+<h2 style=" font-family: 'Abril Fatface', cursive;  color: #3498db; letter-spacing: 0.5px;
+color: #013220; ">Upload Image for Classification</h2>
+
+
+<br>
+
+<form method="post" enctype="multipart/form-data" action="predictImage">
+
+    {% csrf_token %}
+    <!-- <div class="col-md-4 col-sm-4 " style="padding-left: 515px ; margin-bottom: 10px;"> -->
+     <input name="filePath" style="color: rgb(6, 6, 6); margin: 10px; font-size: 16px; width: 250px; background-color: #ffffff; border-radius: 5px; border: 2px solid #2380f3; padding: 5px;" type="file"><br>
+    <!-- </div> -->
+
+
+    <input type="submit" style=" display: inline-block;
+ padding: 8px 15px;
+ font-size: 16px;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
+ border: 2px solid #3498db;
+ border-radius: 5px;
+ color: #3498db;
+ background-color: #ffffff;
+ transition: background-color 0.3s, color 0.3s;" value="Submit" name=""></div>
+    <h2 style="padding-left: 10px;font-family: 'Abril Fatface', cursive;  color: #3498db; letter-spacing: 0.5px;
+    color: #013220; ">The Classification of the image is {{predictedLabel}}</h2>
+    <img src={{filePathName}} style="width: 300px; padding-left: 10px; padding-top: 10px;" alt=''>
+    <!-- {{filePathName}} -->
+</form>
+<br>
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+#top {
+    position: relative; width: 100%;
+  }
+
+  .container_head{
+    position: relative;
+  }
+  .heading {
+    position: relative; text-align: center;
+  }
+  .container{
+    text-align: center;
+    margin-top: 0;
+  }
+#button{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+  
